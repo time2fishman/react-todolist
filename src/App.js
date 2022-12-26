@@ -3,7 +3,7 @@ import CreateTask from './components/CreateTask';
 import TaskList from './components/TaskList';
 import { useState } from 'react'
 
-function App() {
+const App = () => {
   const [newTask, setNewTask] = useState('')
   const [taskList, setTaskList] = useState([])
 
@@ -13,7 +13,7 @@ function App() {
         <h1>Basic To Do List</h1>
       </header>
       <CreateTask newTask={newTask} setNewTask={setNewTask} setTaskList={setTaskList} />
-      <TaskList newTask={newTask} taskList={taskList} setTaskList={setTaskList} />
+      <TaskList taskList={taskList} setTaskList={setTaskList} />
     </div>
   );
 }
