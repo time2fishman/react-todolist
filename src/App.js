@@ -1,9 +1,15 @@
 import './App.css';
+import CreateTask from './components/CreateTask';
+import TaskList from './components/TaskList';
 
 function App() {
   return (
     <div className="App">
-      To Do List App
+      <header>
+        <h1>Basic To Do List</h1>
+      </header>
+      <CreateTask />
+      <TaskList />
     </div>
   );
 }
