@@ -29,7 +29,7 @@
 }
 
 #add-task {
-  background-color: #a5a5a5;
+  background-color: #cfcfcf;
   border-color: aqua;
   margin-right: 0.5rem;
 }
@@ -59,6 +59,15 @@
   margin-left: 1.5rem;
   color: #e7e6e6;
   background-color: #575656;
+  opacity: 55%;
+}
+
+.remove-item-btn:hover {
+  opacity: 1;
+}
+
+.remove-item-btn:active {
+  color: red;
 }
 
 #clearList-btn {
@@ -66,6 +75,10 @@
   border-color: #00ffff;
   font-weight: 800;
   margin-top: 1rem;
+}
+
+#clearList-btn:active {
+  color: red;
 }
 
 /* MEDIA QUERIES */
