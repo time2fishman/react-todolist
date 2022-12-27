@@ -9,17 +9,17 @@ const TaskList = (props) => {
 
     return (
         <div>
-            <h2>Current Tasks:</h2>
+            <h2 id='currentTasks-heading'>Current Tasks</h2>
             {props.taskList.map((task, index) => {
                 return (
-                    <section key={index}>
-                        <input type='checkbox' />
+                    <section className='list-item' key={index}>
+                        <input className='checkbox' type='checkbox' />
                         <label>{task}</label>
-                        <button onClick={() => removeListItem(index)}>x</button>
+                        <button className='remove-item-btn' onClick={() => removeListItem(index)}>x</button>
                     </section>
                 )
             })}
-            <button onClick={() => props.setTaskList([])}>Clear List</button>
+            <button id='clearList-btn' onClick={() => props.setTaskList([])}>Clear List</button>
         </div>
     );
 };

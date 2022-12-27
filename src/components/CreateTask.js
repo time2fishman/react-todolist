@@ -13,12 +13,12 @@ const CreateTask = (props) => {
     }
 
     return (
-        <div>
-            <h2>Create New Task</h2>
+        <div id='createTask-container'>
+            <h2 id='createTask-heading'>Create New Task</h2>
             <form onSubmit={handleSubmit}>
                 <label htmlFor='add-task'></label>
                 <input onChange={handleChange} type='text' id='add-task' name='add-task' />
-                <input type="submit" value='Submit' />
+                <input id='submit-btn' type="submit" value='Create' />
             </form>
         </div>
     );

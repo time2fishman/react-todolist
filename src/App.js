@@ -9,7 +9,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <header>
+      <header id='header'>
         <h1>Basic To Do List</h1>
       </header>
       <CreateTask newTask={newTask} setNewTask={setNewTask} setTaskList={setTaskList} />
