@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+* {
+  background-color: #4a4a4a;
   color: white;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+/* App Component */
+
+.App {
+  margin: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#header {
+  margin-bottom: 1rem;
+  border-bottom: solid 2px;
+  border-color: aqua;
+  max-width: fit-content;
+}
+
+/* CreatTask Component */
+
+#createTask-container {
+  margin-bottom: 2rem;
+}
+
+#createTask-heading {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+#add-task {
+  background-color: #cfcfcf;
+  border-color: aqua;
+  margin-right: 0.5rem;
+}
+
+#submit-btn {
+  background-color: #939292;
+  border-color: #00ffff;
+  font-weight: 800;
+}
+
+/* TaskList Component */
+
+#currentTasks-heading {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.list-item {
+  padding: 0.3rem;
+}
+
+.checkbox {
+  margin-right: 0.5rem;
+}
+
+.remove-item-btn {
+  margin-left: 1.5rem;
+  color: #e7e6e6;
+  background-color: #575656;
+  opacity: 55%;
+}
+
+.remove-item-btn:hover {
+  opacity: 1;
+}
+
+.remove-item-btn:active {
+  color: red;
+}
+
+#clearList-btn {
+  background-color: #939292;
+  border-color: #00ffff;
+  font-weight: 800;
+  margin-top: 1rem;
+}
+
+#clearList-btn:active {
+  color: red;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 750px) {
+  .App {
+    margin: 3rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  #header {
+    margin-bottom: 2.5rem;
+  }
+
+  #createTask-container {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .App {
+    margin: 4rem;
+  }
+
+  #header {
+    margin-bottom: 3rem;
+  }
+
+  #createTask-container {
+    margin-bottom: 3rem;
   }
 }
